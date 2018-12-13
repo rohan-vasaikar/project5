@@ -2,10 +2,26 @@ extends layout
 
 block content
   h1= title
-  p Welcome to our test
+  p Public Information 
 
   // Wrapper
   #wrapper
+
+    // ADD USER
+    h2 Add User
+    #addUser
+      fieldset
+        input#inputUserName(type='text', placeholder='Username')
+        input#inputUserEmail(type='text', placeholder='Email')
+        br
+        input#inputUserFullname(type='text', placeholder='Full Name')
+        input#inputUserAge(type='text', placeholder='Age')
+        br
+        input#inputUserLocation(type='text', placeholder='Location')
+        input#inputUserGender(type='text', placeholder='gender')
+        br
+        button#btnAddUser Add Person's Info
+    // /ADD USER
 
     // USER INFO
     #userInfo
@@ -14,11 +30,14 @@ block content
         strong Name:
         |  <span id='userInfoName'></span>
         br
+        br
         strong Age:
         |  <span id='userInfoAge'></span>
         br
+        br
         strong Gender:
         |  <span id='userInfoGender'></span>
+        br
         br
         strong Location:
         |  <span id='userInfoLocation'></span>
@@ -35,21 +54,7 @@ block content
         tbody
     // /USER LIST
 
-    // ADD USER
-    h2 Add User
-    #addUser
-      fieldset
-        input#inputUserName(type='text', placeholder='Username')
-        input#inputUserEmail(type='text', placeholder='Email')
-        br
-        input#inputUserFullname(type='text', placeholder='Full Name')
-        input#inputUserAge(type='text', placeholder='Age')
-        br
-        input#inputUserLocation(type='text', placeholder='Location')
-        input#inputUserGender(type='text', placeholder='gender')
-        br
-        button#btnAddUser Add User
-    // /ADD USER
+
 
   // /WRAPPER
 
