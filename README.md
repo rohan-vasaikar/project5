@@ -8,7 +8,7 @@ download the project
 3. open browser and search "localhost:3000"
 
 2nd Method 
-1. extract the zip file "project.zip"
+1. extract the zip file "project5.zip"
 2. open terminal where all project files are
 3. run command "npm start"
 4. open browser and search "localhost:3000"
